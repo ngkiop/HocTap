@@ -87,7 +87,7 @@ for year in years:
 
 # Bài tập tổng hợp cả 2 bài 
 
-"""
+
 def kiem_tra_so():
     numbers = list(map(int, input("Nhập các số nguyên, cách nhau bởi dấu cách: ").split()))
     for n in numbers:
@@ -112,28 +112,48 @@ def kiem_tra_nam():
         else:
             print(f"{year} không phải năm nhuận, có 365 ngày")
 
+def kiem_tra_nguyen_to():
+    numbers = list(map(int, input("Nhập các số nguyên, cách nhau bởi dấu cách: ").split()))
+    for n in numbers:
+        if n <= 1:
+            print(f"{n} không phải số nguyên tố")
+        else:
+            is_prime = True
+            for i in range(2, int(n**0.5) + 1):
+                if n % i == 0:
+                    is_prime = False
+                    break
+            if is_prime:
+                print(f"{n} là số nguyên tố")
+            else:
+                print(f"{n} không phải số nguyên tố")            
+
+
 while True:
     print("\n===== MENU =====")
     print("1. Kiểm tra số chẵn/lẻ, dương/âm")
     print("2. Kiểm tra năm nhuận và số ngày trong năm")
-    print("3. Thoát")
+    print("3. Kiểm tra số nguyên tố")
+    print("4. Thoát")
     
-    choice = input("Chọn chức năng (1/2/3): ")
+    choice = input("Chọn chức năng (1/2/3/4): ")
     
     if choice == "1":
         kiem_tra_so()
     elif choice == "2":
         kiem_tra_nam()
     elif choice == "3":
+        kiem_tra_nguyen_to()
+    elif choice == "4":
         print("Tạm biệt!")
         break
     else:
         print("Lựa chọn không hợp lệ, vui lòng thử lại.")
-"""
+
 
 # Bài tập về nhà ôn tập kiến thức hôm nay
 
-
+"""
 n = int(input("Nhập số nguyên: "))
 
 if n <= 1:
@@ -148,4 +168,4 @@ else:
         print(f"{n} là số nguyên tố")
     else:
         print(f"{n} không phải số nguyên tố")
-
+"""

@@ -1,0 +1,9 @@
+# Bỏ qua tất cả các file thực thi .exe của C/C++
+*.exe
+
+# Bỏ qua thư mục cấu hình nội bộ của VS Code
+.vscode/
+
+# Bỏ qua các file rác tự sinh của Python (nếu có)
+__pycache__/
+*.pyc

@@ -1,45 +1,24 @@
-// #include <stdio.h>
-
-// int main() {
-
-//     int cd, cr;
-//     int chuvi, dientich;
-
-//     printf("Nhap chieu dai: ");
-//     scanf("%d", &cd);
-
-//     printf("Nhap chieu rong: ");
-//     scanf("%d", &cr);
-
-//     chuvi = (cd + cr) * 2;
-//     dientich = cd * cr;
-
-//     printf("Chu vi hinh chu nhat la: %d\n", chuvi);
-//     printf("Dien tich hinh chu nhat la: %d\n", dientich);
-
-//     return 0;
-
-// }
-
 #include <stdio.h>
 
-int main() {
+int main()
+{
+    int tuoi;
+    float diem;
+    char ky_tu_dau;
 
-    float cd, cr;
-    float chuvi, dientich;
+    printf("Nhap tuoi cua toi: ");
+    scanf("%d", &tuoi);
 
-    printf("Nhap chieu dai: ");
-    scanf("%f", &cd);
+    printf("Nhap diem cua toi: ");
+    scanf("%f", &diem);
 
-    printf("Nhap chieu rong: ");
-    scanf("%f", &cr);
+    printf("Nhap ky tu dau trong ten toi: ");
+    scanf(" %c", &ky_tu_dau);
 
-    chuvi = (cd + cr) * 2;
-    dientich = cd * cr;
-
-    printf("Chu vi hinh chu nhat la: %0.2f\n", chuvi);
-    printf("Dien tich hinh chu nhat la: %.2f\n", dientich);
+    printf("\n--- Thong tin vua nhap ---\n");
+    printf("Tuoi: %d\n", tuoi);
+    printf("Diem: %.2f\n", diem);
+    printf("Ky tu dau: %c\n", ky_tu_dau);
 
     return 0;
-    
 }

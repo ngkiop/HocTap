@@ -1,28 +1,21 @@
-// On tap ngay 4 ve for, while, if.
-
 // #include <stdio.h>
 
 // int main()
 // {
 
-//     int n, tong = 0;
-//     printf("Nhap so nguyen duong n: ");
-//     scanf("%d", &n);
+//     float cd, cr, chu_vi, dien_tich;
 
-//     // for (int i = 1; i <= n; i++)
-//     // {
-//     //     if (i % 2 == 0)
-//     //     {
-//     //         tong += i;
-//     //     }
-//     // }
+//     printf("Nhap chieu dai hinh chu nhat: ");
+//     scanf("%f", &cd);
 
-//     for (int i = 2; i <= n; i += 2)
-//     {
-//         tong += i;
-//     }
+//     printf("Nhap chieu rong hinh chu nhat: ");
+//     scanf("%f", &cr);
 
-//     printf("Tong cac so chan la: %d", tong);
+//     chu_vi = (cd + cr) * 2;
+//     dien_tich = cd * cr;
+
+//     printf("Chu vi hinh chu nhat la: %.2f.\n", chu_vi);
+//     printf("Dien tich hinh chu nhat la: %.2f.\n", dien_tich);
 
 //     return 0;
 // }
@@ -32,14 +25,14 @@
 // int main()
 // {
 
-//     int x;
-//     printf("Nhap vao bang cuu chuong x tu ban phim: ");
-//     scanf("%d", &x);
+//     float do_C, do_F;
 
-//     for (int i = 1; i <= 10; i++)
-//     {
-//         printf("%d x %d = %d\n", x, i, x * i);
-//     }
+//     printf("Nhap nhiet do(C): ");
+//     scanf("%f", &do_C);
+
+//     do_F = (do_C * (9 / 5)) + 32;
+
+//     printf("Nhiet do duoc doi thanh(do F): %.2f\n", do_F);
 
 //     return 0;
 // }
@@ -49,18 +42,56 @@
 // int main()
 // {
 
-//     int n;
-//     long long giaithua = 1;
-
-//     printf("Nhap so nguyen duong n: ");
+//     long long n, binh_phuong, lap_phuong;
+//     printf("Nhap vao so nguyen duong n: ");
 //     scanf("%d", &n);
 
-//     for (int i = 1; i <= n; i++)
-//     {
-//         giaithua *= i;
-//     }
+//     binh_phuong = n * n;
+//     lap_phuong = n * n * n;
 
-//     printf("Giai thua cua n(%d) la: %lld", n, giaithua);
+//     printf("Binh phuong cua n: %lld\n", binh_phuong);
+//     printf("Lap phuong cua n la: %lld\n", lap_phuong);
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main()
+// {
+
+//     float nc, l, tong_luong;
+
+//     printf("Nhap so ngay cong: ");
+//     scanf("%f", &nc);
+
+//     printf("Nhap luong mot ngay: ");
+//     scanf("%f", &l);
+
+//     tong_luong = nc * l;
+
+//     printf("Tong luong: %.2f", tong_luong);
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main()
+// {
+
+//     int n, t, c, dv, tong;
+
+//     printf("Nhap n co 3 chu so: ");
+//     scanf("%d", &n);
+
+//     t = n / 100 ;
+//     c = (n / 10) % 10;
+//     dv = n % 10;
+
+//     tong = t + c + dv;
+
+//     printf("Tong cua so %d la: %d", n, tong);
 
 //     return 0;
 // }
@@ -70,34 +101,16 @@
 int main()
 {
 
-    int n;
-    printf("Nhap n tu ban phim: ");
-    scanf("%d", &n);
+    int s, gio, phut, giay;
 
-    for (int i = 1; i <= n; i++)
-    {
-        if (i % 3 == 0 && i % 5 == 0)
-        {
-            // printf("So chia het cho ca 3 va 5 la: %d\n", i);
+    printf("Nhap tong so giay: ");
+    scanf("%d", &s);
 
-            printf("FizzBuzz.\n");
-        }
-        else if (i % 3 == 0)
-        {
-            // printf("So chia het cho 3 la: %d\n", i);
-            printf("Fizz.\n");
-        }
-        else if (i % 5 == 0)
-        {
-            // printf("So chia het cho 5 la: %d\n", i);
-            printf("Buzz.\n");
-        }
-        else
-        {
-            // printf("Cac so khong chia het cho 3 va 5 la: %d\n", i);
-            printf("%d.\n", i);
-        }
-    }
+    gio = s / 3600;
+    phut = (s % 3600) / 60;
+    giay = s % 60;
+
+    printf("Ket qua: %d:%d:%d\n", gio, phut, giay);
 
     return 0;
 }

@@ -32,7 +32,7 @@
 //     printf("Nhap nhiet do(C): ");
 //     scanf("%f", &do_C);
 
-//     do_F = (do_C * (9 / 5)) + 32;
+//     do_F = (do_C * (9.0 / 5.0)) + 32;
 
 //     printf("Nhiet do duoc doi thanh(do F): %.2f\n", do_F);
 

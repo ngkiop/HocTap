@@ -47,7 +47,7 @@
 
 //     long long n, binh_phuong, lap_phuong;
 //     printf("Nhap vao so nguyen duong n: ");
-//     scanf("%d", &n);
+//     scanf("%lld", &n);
 
 //     binh_phuong = n * n;
 //     lap_phuong = n * n * n;
@@ -137,7 +137,7 @@
 //     printf("Nhap diem Anh(he so 1): ");
 //     scanf("%f", &anh);
 
-//     dtb = ((toan * 2) + (van * 2) + anh) / 3;
+//     dtb = ((toan * 2) + (van * 2) + anh) / 5;
 
 //     printf("Diem trung binh la: %.2f", dtb);
 

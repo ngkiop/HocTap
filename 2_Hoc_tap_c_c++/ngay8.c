@@ -64,6 +64,11 @@ int main()
     printf("Lua chon ma loai ghe: ");
     scanf(" %c", &maVe);
 
+    // Xóa sạch các ký tự thừa cho đến trước dấu Enter
+    scanf("%*[^\n]");
+    // Hốt luôn dấu Enter còn sót lại
+    getchar();
+
     printf("So luong ve la: ");
     scanf("%ld", &soLuong);
 
@@ -82,7 +87,7 @@ int main()
         giaVe = 250000; // Chỉ gán đơn giá
         break;
     default:
-        printf("\nLoi! Khong co loai ghe nay.\n");
+        printf("Loi! Khong co loai ghe nay.\n");
         return 0; // Dừng chương trình luôn nếu nhập sai mã
     }
 
